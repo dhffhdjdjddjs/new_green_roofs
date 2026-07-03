@@ -106,7 +106,12 @@ contextMenu.addEventListener("click", (event) => {
 
 const coordsInput = document.getElementById("coordsInput")
 const jumpBtn = document.getElementById("jumpBtn")
+const footerTotal = document.getElementById("footerTotal")
 const currentYear = document.getElementById("currentYear")
+
+if (footerTotal) {
+  footerTotal.textContent = `Total: ${data.length}`
+}
 
 if (currentYear) {
   currentYear.textContent = new Date().getFullYear()
